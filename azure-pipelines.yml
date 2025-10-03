@@ -55,7 +55,7 @@ stages:
                   action: createSecret
                   connectionType: azureResourceManager
                   secretName: $(imagePullSecret)
-                  dockerRegistryEndpoint: 'ado-use-case-dockkuber-001'
+                  dockerRegistryEndpoint: 'ado-use-case-dockkuber-connection'
                   azureSubscriptionConnection: 'ado-use-case-arm-connection'
                   azureResourceGroup: 'ado-use-case-resource-group'
                   kubernetesCluster: 'ado-use-case-dockkuber-001'
