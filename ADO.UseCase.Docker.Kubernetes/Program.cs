@@ -15,7 +15,7 @@ var app = builder.Build();
 //    app.UseHsts();
 //}
 
-app.UseHsts();
+//app.UseHsts();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
