@@ -24,7 +24,7 @@ stages:
         buildContext: $(Build.Repository.LocalPath)
         repository: $(webRepository)
         dockerfile: '$(Build.SourcesDirectory)/ADO.UseCase.Docker.Kubernetes/Dockerfile'
-        containerRegistry: 'adousecasedockkuber001'
+        containerRegistry: 'ado-use-case-dockkuber-connection'
         tags: |
           $(tag)
 
