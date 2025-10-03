@@ -3,7 +3,6 @@ trigger:
 
 variables:
   buildConfiguration: 'Release'
-  leaderboardRepository: 'leaderboard'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'secret'
@@ -78,6 +77,5 @@ stages:
                   $(imagePullSecret)
                 containers: |
                   $(RegistryName)/$(webRepository):$(tag)
-                  $(RegistryName)/$(leaderboardRepository):$(tag)
 
                 # b
