@@ -24,7 +24,7 @@ stages:
         buildContext: $(Build.Repository.LocalPath)
         repository: $(webRepository)
         dockerfile: '$(Build.SourcesDirectory)/ADO.UseCase.Docker.Kubernetes/Dockerfile'
-        containerRegistry: 'kubernetes-001'
+        containerRegistry: 'adousecasedockkuber001'
         tags: |
           $(tag)
 
