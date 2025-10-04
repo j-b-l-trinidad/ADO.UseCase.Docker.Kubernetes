@@ -26,6 +26,7 @@ stages:
         containerRegistry: 'ado-use-case-dockkuber-connection'
         tags: |
           $(tag)
+          latest
 
     - publish: '$(Build.SourcesDirectory)/manifests'
       artifact: manifests
