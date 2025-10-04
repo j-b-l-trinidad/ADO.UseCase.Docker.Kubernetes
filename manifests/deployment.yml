@@ -16,7 +16,7 @@ spec:
         - name: web
           image: adousecasedockkubercontainerreg001.azurecr.io/web:latest
           ports:
-          - containerPort: 8080
+          - containerPort: 8083
 # ---
 # apiVersion : apps/v1
 # kind: Deployment
