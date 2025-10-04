@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: adousecasedockkuber001.azurecr.io/web:latest
+          image: adousecasedockkubercontainerreg001.azurecr.io/web:latest
           ports:
           - containerPort: 80
 # ---

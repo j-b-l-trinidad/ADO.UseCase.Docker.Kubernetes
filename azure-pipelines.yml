@@ -23,7 +23,7 @@ stages:
         buildContext: $(Build.Repository.LocalPath)
         repository: $(webRepository)
         dockerfile: '$(Build.SourcesDirectory)/ADO.UseCase.Docker.Kubernetes/Dockerfile'
-        containerRegistry: 'ado-use-case-dockkuber-connection'
+        containerRegistry: 'ado-use-case-dockkuber-connection-002'
         tags: |
           $(tag)
           latest
@@ -55,7 +55,7 @@ stages:
                   action: createSecret
                   connectionType: azureResourceManager
                   secretName: $(imagePullSecret)
-                  dockerRegistryEndpoint: 'ado-use-case-dockkuber-connection'
+                  dockerRegistryEndpoint: 'ado-use-case-dockkuber-connection-002'
                   azureSubscriptionConnection: 'ado-use-case-arm-connection'
                   azureResourceGroup: 'ado-use-case-resource-group'
                   kubernetesCluster: 'ado-use-case-dockkuber-001'
